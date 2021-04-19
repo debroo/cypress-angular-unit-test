@@ -1,4 +1,3 @@
-const wp = require('@cypress/webpack-preprocessor');
 import root from './helpers';
 import * as webpack from 'webpack';
 import * as path from 'path';
@@ -127,8 +126,4 @@ const webpackOptions = {
   },
 };
 
-const options = {
-  webpackOptions,
-};
-
-module.exports = wp(options);
+module.exports = webpackOptions;
